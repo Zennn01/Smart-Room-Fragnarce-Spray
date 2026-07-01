@@ -1,73 +1,85 @@
-# Smart Room Fragrance Spray Berbasis IoT untuk Anak Kost
+# 🌺 Smart Room Fragrance Spray
 
-## 1. Deskripsi Project
+<div align="center">
 
-Smart Room Fragrance Spray adalah alat penyemprot pewangi ruangan otomatis berbasis IoT yang dibuat untuk kebutuhan anak kost. Alat ini dirancang agar pengguna dapat menyemprotkan pewangi ruangan secara otomatis melalui perangkat seperti HP atau laptop yang terhubung ke jaringan WiFi.
+### Sistem Penyemprot Pewangi Ruangan Otomatis Berbasis IoT untuk Anak Kost
 
-Berbeda dengan pengharum ruangan otomatis yang biasanya memakai kaleng aerosol atau gas, alat ini menggunakan cairan pewangi isi ulang. Cairan pewangi dapat ditaruh di dalam wadah atau botol kecil, lalu dipompa menggunakan pompa mini DC 5V menuju nozzle spray agar keluar dalam bentuk semprotan halus.
+[![IoT](https://img.shields.io/badge/IoT-ESP32-blue?style=flat-square)]()
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=flat-square)]()
+
+</div>
+
+---
+
+## 📋 1. Deskripsi Project
+
+**Smart Room Fragrance Spray** adalah alat penyemprot pewangi ruangan otomatis berbasis IoT yang dibuat untuk kebutuhan anak kost. Alat ini dirancang agar pengguna dapat menyemprotkan pewangi ruangan secara otomatis atau manual melalui HP/laptop dengan kontrol mudah.
+
+Berbeda dengan pengharum ruangan otomatis yang biasanya memakai kaleng aerosol atau gas, alat ini menggunakan cairan pewangi isi ulang. Cairan pewangi dapat ditaruh di dalam wadah atau botol kecil, sehingga lebih fleksibel dan hemat.
 
 Project ini dibuat sebagai prototype awal yang sederhana, murah, dan aman karena menggunakan sumber daya USB 5V, bukan langsung dari listrik AC 220V.
 
 ---
 
-## 2. Latar Belakang Ide
+## 💡 2. Latar Belakang Ide
 
-Anak kost biasanya membutuhkan ruangan yang nyaman, bersih, dan wangi. Namun, tidak semua anak kost memiliki alat pengharum ruangan otomatis karena kebanyakan produk yang tersedia di pasaran menggunakan aerosol, gas, atau refill khusus yang harganya bisa lebih mahal.
+Anak kost biasanya membutuhkan ruangan yang nyaman, bersih, dan wangi. Namun, tidak semua anak kost memiliki alat pengharum ruangan otomatis karena kebanyakan produk yang tersedia di pasaran menggunakan kaleng aerosol atau gas yang tidak ramah lingkungan.
 
-Dari masalah tersebut, dibuatlah ide alat Smart Room Fragrance Spray berbasis IoT dengan sistem cairan isi ulang. Dengan alat ini, pengguna dapat memakai cairan pewangi yang lebih fleksibel, seperti pewangi ruangan cair atau campuran pewangi dengan air, lalu alat akan menyemprotkannya secara otomatis menggunakan pompa mini.
+Dari masalah tersebut, dibuatlah ide alat Smart Room Fragrance Spray berbasis IoT dengan sistem cairan isi ulang. Dengan alat ini, pengguna dapat memakai cairan pewangi yang lebih fleksibel, seperti mencampur air dengan parfum atau essential oil.
 
 Selain itu, alat ini juga dapat dikembangkan dengan fitur tambahan seperti jadwal semprot otomatis, kontrol melalui website, perintah suara, sensor cairan, dan riwayat penggunaan.
 
 ---
 
-## 3. Tujuan Project
+## 🎯 3. Tujuan Project
 
 Tujuan dari project ini adalah:
 
-1. Membuat alat penyemprot pewangi ruangan otomatis berbasis ESP32.
-2. Membuat sistem pewangi ruangan yang tidak bergantung pada aerosol atau gas.
-3. Membuat alat yang dapat dikontrol melalui HP atau laptop.
-4. Menggunakan cairan pewangi isi ulang agar lebih hemat dan fleksibel.
-5. Membuat prototype IoT sederhana yang cocok untuk kebutuhan anak kost.
-6. Menggunakan sumber daya USB 5V agar lebih aman dan mudah digunakan.
+1. ✅ Membuat alat penyemprot pewangi ruangan otomatis berbasis ESP32.
+2. ✅ Membuat sistem pewangi ruangan yang tidak bergantung pada aerosol atau gas.
+3. ✅ Membuat alat yang dapat dikontrol melalui HP atau laptop.
+4. ✅ Menggunakan cairan pewangi isi ulang agar lebih hemat dan fleksibel.
+5. ✅ Membuat prototype IoT sederhana yang cocok untuk kebutuhan anak kost.
+6. ✅ Menggunakan sumber daya USB 5V agar lebih aman dan mudah digunakan.
 
 ---
 
-## 4. Konsep Cara Kerja
+## ⚙️ 4. Konsep Cara Kerja
 
-Konsep utama alat ini adalah ESP32 menerima perintah dari pengguna, lalu mengaktifkan relay untuk menyalakan pompa mini. Pompa akan menarik cairan pewangi dari tangki atau botol kecil, kemudian mendorong cairan tersebut menuju nozzle spray. Setelah itu, cairan keluar dalam bentuk semprotan halus ke ruangan.
+Konsep utama alat ini adalah ESP32 menerima perintah dari pengguna, lalu mengaktifkan relay untuk menyalakan pompa mini. Pompa akan menarik cairan pewangi dari tangki atau botol kecil, kemudian mengeluarkannya melalui nozzle spray.
 
-Alur sederhana:
+**Alur sederhana:**
 
 ```text
-User membuka halaman kontrol dari HP/laptop
+👤 User membuka halaman kontrol dari HP/laptop
         ↓
-User menekan tombol semprot
+👆 User menekan tombol semprot
         ↓
-ESP32 menerima perintah
+📡 ESP32 menerima perintah
         ↓
-Relay aktif
+🔌 Relay aktif
         ↓
-Pompa mini menyala
+💨 Pompa mini menyala
         ↓
-Cairan pewangi ditarik dari botol
+🌊 Cairan pewangi ditarik dari botol
         ↓
-Cairan keluar melalui nozzle spray
+✨ Cairan keluar melalui nozzle spray
         ↓
-Ruangan menjadi wangi
+🌸 Ruangan menjadi wangi
 ```
 
 ---
 
-## 5. Nama Project
+## 📛 5. Nama Project
 
-Nama project:
+**Nama project:**
 
 ```text
 Smart Room Fragrance Spray Berbasis IoT untuk Anak Kost
 ```
 
-Nama alternatif:
+**Nama alternatif:**
 
 ```text
 Smart Room Fragrance Spray Berbasis IoT dengan Sistem Pewangi Cair Isi Ulang
@@ -75,347 +87,347 @@ Smart Room Fragrance Spray Berbasis IoT dengan Sistem Pewangi Cair Isi Ulang
 
 ---
 
-## 6. Keunggulan Ide
+## 🌟 6. Keunggulan Ide
 
 Keunggulan dari alat ini adalah:
 
-1. Tidak menggunakan aerosol atau gas.
-2. Menggunakan cairan pewangi isi ulang.
-3. Lebih hemat karena cairan bisa dicampur air.
-4. Cocok untuk kamar kost.
-5. Aman untuk prototype karena menggunakan USB 5V.
-6. Bisa dikontrol dari HP atau laptop.
-7. Dapat dikembangkan dengan fitur IoT dan AI.
-8. Komponen mudah dicari dan harganya murah.
-9. Bisa menjadi project IoT sederhana namun bermanfaat.
+- 🚫 Tidak menggunakan aerosol atau gas.
+- 💧 Menggunakan cairan pewangi isi ulang.
+- 💰 Lebih hemat karena cairan bisa dicampur air.
+- 🏠 Cocok untuk kamar kost.
+- ⚡ Aman untuk prototype karena menggunakan USB 5V.
+- 📱 Bisa dikontrol dari HP atau laptop.
+- 🤖 Dapat dikembangkan dengan fitur IoT dan AI.
+- 🛠️ Komponen mudah dicari dan harganya murah.
+- 💡 Bisa menjadi project IoT sederhana namun bermanfaat.
 
 ---
 
-## 7. Daftar Alat dan Komponen
+## 🛠️ 7. Daftar Alat dan Komponen
 
 Berikut alat dan komponen yang digunakan:
 
-| No | Nama Alat                                                             |     Harga |
-| -- | --------------------------------------------------------------------- | --------: |
-| 1  | ESP32-S3 DevKitC-1 N16R8 Type-C dengan PSRAM 16MB                     | Rp100.000 |
-| 2  | Purifier Water Pump Diaphragm Self-Priming DC 5V Dinamo 130           |  Rp16.000 |
-| 3  | SPRAYER SET MIST NOZZLE ABU ABU SPRINKLER                             |     Rp920 |
-| 4  | Selang silikon kecil                                                  |  Rp10.000 |
-| 5  | Tangki cairan kecil / botol bekas                                     |       Rp0 |
-| 6  | Relay 5V 4 Channel Module High / Low Level Trigger Opto Isolation 4CH |     Rp400 |
-| 7  | Female to Female Kabel Jumper                                         |  Rp15.000 |
-| 8  | Kabel USB                                                             |   Rp6.000 |
-| 9  | Adaptor HP 5V 2A                                                      |  Rp20.000 |
-| 10 | Breadboard untuk uji coba awal                                        |         - |
+| No | 🔧 Nama Alat | 💵 Harga |
+| -- | ----- | ----: |
+| 1 | ESP32-S3 DevKitC-1 N16R8 Type-C dengan PSRAM 16MB | Rp100.000 |
+| 2 | Purifier Water Pump Diaphragm Self-Priming DC 5V Dinamo 130 | Rp16.000 |
+| 3 | SPRAYER SET MIST NOZZLE ABU ABU SPRINKLER | Rp920 |
+| 4 | Selang silikon kecil | Rp10.000 |
+| 5 | Tangki cairan kecil / botol bekas | Rp0 |
+| 6 | Relay 5V 4 Channel Module High / Low Level Trigger Opto Isolation 4CH | Rp400 |
+| 7 | Female to Female Kabel Jumper | Rp15.000 |
+| 8 | Kabel USB | Rp6.000 |
+| 9 | Adaptor HP 5V 2A | Rp20.000 |
+| 10 | Breadboard untuk uji coba awal | - |
 
-Total biaya sementara:
+**Total biaya sementara:**
 
 ```text
-Rp168.320
+💰 Rp168.320
 ```
 
-Catatan: Harga dapat berubah sesuai toko dan ongkos kirim. Untuk tangki cairan, sementara dapat menggunakan botol kecil terlebih dahulu agar lebih hemat.
+> **Catatan:** Harga dapat berubah sesuai toko dan ongkos kirim. Untuk tangki cairan, sementara dapat menggunakan botol kecil terlebih dahulu agar lebih hemat.
 
 ---
 
-## 8. Fungsi Setiap Komponen
+## 📍 8. Fungsi Setiap Komponen
 
-### 1. ESP32-S3 DevKitC-1
+### 1️⃣ ESP32-S3 DevKitC-1
 
-ESP32-S3 berfungsi sebagai otak utama dari alat. Board ini akan menerima perintah dari pengguna melalui jaringan WiFi, lalu mengontrol relay untuk menyalakan atau mematikan pompa.
+**ESP32-S3** berfungsi sebagai otak utama dari alat. Board ini akan menerima perintah dari pengguna melalui jaringan WiFi, lalu mengontrol relay untuk menyalakan atau mematikan pompa.
 
-Fungsi ESP32:
+**Fungsi ESP32:**
 
 ```text
-- Menghubungkan alat ke WiFi
-- Menjalankan program utama
-- Membuat halaman kontrol sederhana
-- Mengontrol relay
-- Mengatur durasi pompa menyala
+🌐 Menghubungkan alat ke WiFi
+⚙️  Menjalankan program utama
+🖥️  Membuat halaman kontrol sederhana
+🎮 Mengontrol relay
+⏱️  Mengatur durasi pompa menyala
 ```
 
 ---
 
-### 2. Pompa Mini DC 5V
+### 2️⃣ Pompa Mini DC 5V
 
 Pompa mini digunakan untuk menarik cairan pewangi dari botol atau tangki kecil, lalu mendorongnya ke nozzle spray.
 
-Fungsi pompa:
+**Fungsi pompa:**
 
 ```text
-- Menarik cairan dari tangki
-- Mengalirkan cairan melalui selang
-- Mendorong cairan menuju nozzle
+🔽 Menarik cairan dari tangki
+➡️  Mengalirkan cairan melalui selang
+💨 Mendorong cairan menuju nozzle
 ```
 
 Pompa yang digunakan adalah jenis diaphragm self-priming DC 5V, sehingga cocok untuk cairan dan dapat bekerja menggunakan adaptor USB 5V.
 
 ---
 
-### 3. Mist Nozzle Sprayer
+### 3️⃣ Mist Nozzle Sprayer
 
 Nozzle berfungsi sebagai ujung keluarnya cairan. Komponen ini membantu membuat cairan keluar dalam bentuk semprotan yang lebih halus.
 
-Fungsi nozzle:
+**Fungsi nozzle:**
 
 ```text
-- Mengubah aliran cairan menjadi semprotan
-- Menyebarkan pewangi ke udara
-- Membuat hasil semprot lebih rapi
+💨 Mengubah aliran cairan menjadi semprotan
+🌊 Menyebarkan pewangi ke udara
+✨ Membuat hasil semprot lebih rapi
 ```
 
 ---
 
-### 4. Selang Silikon Kecil
+### 4️⃣ Selang Silikon Kecil
 
 Selang digunakan sebagai jalur cairan dari botol ke pompa, lalu dari pompa ke nozzle.
 
-Alur selang:
+**Alur selang:**
 
 ```text
-Botol cairan → Pompa → Nozzle
+🍼 Botol cairan → 💨 Pompa → ✨ Nozzle
 ```
 
 ---
 
-### 5. Botol atau Tangki Cairan
+### 5️⃣ Botol atau Tangki Cairan
 
 Botol digunakan sebagai tempat penyimpanan cairan pewangi. Pada prototype awal, botol bekas kecil bisa digunakan terlebih dahulu agar lebih hemat.
 
-Isi cairan dapat berupa:
+**Isi cairan dapat berupa:**
 
 ```text
-- Air + pewangi ruangan cair
-- Air + bibit parfum laundry
-- Air + essential oil khusus diffuser
+💧 Air + pewangi ruangan cair
+🌿 Air + bibit parfum laundry
+🌸 Air + essential oil khusus diffuser
 ```
 
-Catatan: Jangan menggunakan cairan yang terlalu kental karena dapat membuat selang, pompa, atau nozzle cepat kotor dan mampet.
+> **Catatan:** Jangan menggunakan cairan yang terlalu kental karena dapat membuat selang, pompa, atau nozzle cepat kotor dan mampet.
 
 ---
 
-### 6. Relay 5V 4 Channel
+### 6️⃣ Relay 5V 4 Channel
 
 Relay digunakan sebagai saklar elektronik untuk menghidupkan dan mematikan pompa. ESP32 tidak disarankan langsung menyalakan pompa dari pin GPIO, sehingga relay digunakan sebagai penghubung.
 
-Fungsi relay:
+**Fungsi relay:**
 
 ```text
-- Menerima sinyal dari ESP32
-- Menyalakan pompa
-- Mematikan pompa
-- Melindungi ESP32 dari beban pompa secara langsung
+📥 Menerima sinyal dari ESP32
+🔌 Menyalakan pompa
+⚫ Mematikan pompa
+🛡️  Melindungi ESP32 dari beban pompa secara langsung
 ```
 
-Relay 4 channel sebenarnya lebih dari cukup karena prototype awal hanya membutuhkan 1 channel untuk pompa. Sisa channel dapat dipakai untuk pengembangan, misalnya kipas kecil, LED, atau fitur tambahan lain.
+Relay 4 channel sebenarnya lebih dari cukup karena prototype awal hanya membutuhkan 1 channel untuk pompa. Sisa channel dapat dipakai untuk pengembangan, misalnya kipas kecil, LED, atau fitur tambahan lainnya.
 
 ---
 
-### 7. Kabel Jumper Female to Female
+### 7️⃣ Kabel Jumper Female to Female
 
 Kabel jumper digunakan untuk menghubungkan ESP32 ke relay dan komponen lainnya.
 
-Contoh koneksi:
+**Contoh koneksi:**
 
 ```text
-GPIO ESP32 → IN Relay
-GND ESP32 → GND Relay
-5V/VIN ESP32 → VCC Relay
+📍 GPIO ESP32 → IN Relay
+⚫ GND ESP32 → GND Relay
+🔴 5V/VIN ESP32 → VCC Relay
 ```
 
 ---
 
-### 8. Kabel USB
+### 8️⃣ Kabel USB
 
 Kabel USB digunakan untuk:
 
 ```text
-- Memberi daya ke ESP32
-- Mengupload program ke ESP32
-- Menghubungkan ESP32 ke laptop saat proses testing
+⚡ Memberi daya ke ESP32
+📤 Mengupload program ke ESP32
+🖥️  Menghubungkan ESP32 ke laptop saat proses testing
 ```
 
 ---
 
-### 9. Adaptor HP 5V 2A
+### 9️⃣ Adaptor HP 5V 2A
 
 Adaptor HP digunakan sebagai sumber daya utama alat. Output 5V 2A cukup untuk menyalakan ESP32 dan pompa mini 5V.
 
-Kelebihan menggunakan adaptor USB:
+**Kelebihan menggunakan adaptor USB:**
 
 ```text
-- Lebih aman
-- Mudah digunakan
-- Tidak perlu langsung menyentuh listrik 220V
-- Cocok untuk prototype awal
+🛡️  Lebih aman
+🎯 Mudah digunakan
+⚡ Tidak perlu langsung menyentuh listrik 220V
+📱 Cocok untuk prototype awal
 ```
 
 ---
 
-### 10. Breadboard
+### 🔟 Breadboard
 
 Breadboard digunakan untuk merakit dan menguji rangkaian sementara sebelum dibuat lebih rapi.
 
-Fungsi breadboard:
+**Fungsi breadboard:**
 
 ```text
-- Memudahkan uji coba rangkaian
-- Tidak perlu solder di awal
-- Cocok untuk prototype
+🧪 Memudahkan uji coba rangkaian
+❌ Tidak perlu solder di awal
+⚡ Cocok untuk prototype
 ```
 
 ---
 
-## 9. Rancangan Alur Hardware
+## 🔌 9. Rancangan Alur Hardware
 
-Alur daya listrik:
+**Alur daya listrik:**
 
 ```text
-Adaptor HP 5V 2A
+🔌 Adaptor HP 5V 2A
         ↓
-ESP32
+🧠 ESP32
         ↓
-Relay 5V
+🔀 Relay 5V
         ↓
-Pompa Mini 5V
+💨 Pompa Mini 5V
 ```
 
-Alur cairan:
+**Alur cairan:**
 
 ```text
-Botol cairan pewangi
+🍼 Botol cairan pewangi
         ↓
-Selang silikon
+🔗 Selang silikon
         ↓
-Pompa mini 5V
+💨 Pompa mini 5V
         ↓
-Selang silikon
+🔗 Selang silikon
         ↓
-Mist nozzle
+✨ Mist nozzle
         ↓
-Semprotan pewangi
+💨 Semprotan pewangi
 ```
 
-Alur kontrol:
+**Alur kontrol:**
 
 ```text
-HP / Laptop
+📱 HP / Laptop
         ↓
-WiFi
+📡 WiFi
         ↓
-ESP32
+🧠 ESP32
         ↓
-Relay aktif
+🔀 Relay aktif
         ↓
-Pompa menyala
+💨 Pompa menyala
         ↓
-Pewangi keluar
+🌸 Pewangi keluar
 ```
 
 ---
 
-## 10. Rancangan Pin ESP32
+## 📍 10. Rancangan Pin ESP32
 
 Contoh pin yang digunakan:
 
-| Komponen         | Pin ESP32 | Keterangan       |
-| ---------------- | --------- | ---------------- |
-| Relay IN1        | GPIO 26   | Mengontrol pompa |
-| Relay VCC        | 5V / VIN  | Daya relay       |
-| Relay GND        | GND       | Ground           |
-| LED bawaan ESP32 | GPIO 2    | Indikator status |
+| Komponen | Pin ESP32 | 📝 Keterangan |
+| -------- | --------- | ------------ |
+| Relay IN1 | GPIO 26 | Mengontrol pompa |
+| Relay VCC | 5V / VIN | Daya relay |
+| Relay GND | GND | Ground |
+| LED bawaan ESP32 | GPIO 2 | Indikator status |
 
-Catatan: Pin dapat disesuaikan lagi tergantung board ESP32 yang digunakan.
-
----
-
-## 11. Rancangan Koneksi Relay dan Pompa
-
-Koneksi ESP32 ke relay:
-
-```text
-ESP32 GPIO 26 → IN1 Relay
-ESP32 GND     → GND Relay
-ESP32 5V/VIN  → VCC Relay
-```
-
-Koneksi relay ke pompa:
-
-```text
-Positif adaptor 5V → COM Relay
-NO Relay           → Positif Pompa
-Negatif Pompa      → Negatif adaptor 5V
-```
-
-Penjelasan:
-
-```text
-- COM adalah jalur masuk daya ke relay.
-- NO adalah Normally Open, artinya pompa mati saat relay tidak aktif.
-- Saat relay aktif, COM dan NO tersambung sehingga pompa menyala.
-```
+> **Catatan:** Pin dapat disesuaikan lagi tergantung board ESP32 yang digunakan.
 
 ---
 
-## 12. Software yang Digunakan
+## 🔗 11. Rancangan Koneksi Relay dan Pompa
 
-Software yang dapat digunakan:
+**Koneksi ESP32 ke relay:**
 
 ```text
-- MicroPython
-- Thonny IDE
-- Firmware MicroPython untuk ESP32
+🔌 ESP32 GPIO 26 → IN1 Relay
+⚫ ESP32 GND     → GND Relay
+🔴 ESP32 5V/VIN  → VCC Relay
 ```
 
-Alasan menggunakan MicroPython:
+**Koneksi relay ke pompa:**
 
 ```text
-- Sintaks mirip Python
-- Lebih mudah dipahami untuk pemula
-- Cocok untuk prototype IoT
-- Dapat digunakan untuk mengontrol pin ESP32
-- Bisa dikembangkan ke sistem berbasis web/API
+🔴 Positif adaptor 5V → COM Relay
+📍 NO Relay           → Positif Pompa
+⚫ Negatif Pompa      → Negatif adaptor 5V
+```
+
+**Penjelasan:**
+
+```text
+📍 COM adalah jalur masuk daya ke relay.
+🔓 NO adalah Normally Open, artinya pompa mati saat relay tidak aktif.
+⚡ Saat relay aktif, COM dan NO tersambung sehingga pompa menyala.
+```
+
+---
+
+## 💻 12. Software yang Digunakan
+
+**Software yang dapat digunakan:**
+
+```text
+🐍 MicroPython
+🖥️  Thonny IDE
+📦 Firmware MicroPython untuk ESP32
+```
+
+**Alasan menggunakan MicroPython:**
+
+```text
+🐍 Sintaks mirip Python
+📚 Lebih mudah dipahami untuk pemula
+⚡ Cocok untuk prototype IoT
+🎮 Dapat digunakan untuk mengontrol pin ESP32
+🚀 Bisa dikembangkan ke sistem berbasis web/API
 ```
 
 Selain MicroPython, alat ini juga bisa dibuat menggunakan Arduino IDE dengan bahasa C++. Namun, untuk prototype awal, MicroPython lebih mudah digunakan.
 
 ---
 
-## 13. Fitur Awal Prototype
+## ⭐ 13. Fitur Awal Prototype
 
-Fitur awal yang akan dibuat:
+**Fitur awal yang akan dibuat:**
 
 ```text
-1. ESP32 terhubung ke WiFi
-2. ESP32 membuat halaman web sederhana
-3. User membuka IP ESP32 dari browser
-4. User menekan tombol semprot
-5. Relay menyala
-6. Pompa aktif beberapa detik
-7. Cairan keluar melalui nozzle
-8. Pompa mati otomatis
+1️⃣  ESP32 terhubung ke WiFi
+2️⃣  ESP32 membuat halaman web sederhana
+3️⃣  User membuka IP ESP32 dari browser
+4️⃣  User menekan tombol semprot
+5️⃣  Relay menyala
+6️⃣  Pompa aktif beberapa detik
+7️⃣  Cairan keluar melalui nozzle
+8️⃣  Pompa mati otomatis
 ```
 
-Tombol yang tersedia pada halaman web:
+**Tombol yang tersedia pada halaman web:**
 
 ```text
-- Semprot 1 detik
-- Semprot 2 detik
-- Semprot 3 detik
-- Matikan pompa
+⏱️  Semprot 1 detik
+⏱️  Semprot 2 detik
+⏱️  Semprot 3 detik
+🔴 Matikan pompa
 ```
 
 ---
 
-## 14. Contoh Program MicroPython
+## 🔧 14. Contoh Program MicroPython
 
-File utama:
+**File utama:**
 
 ```text
-main.py
+📄 main.py
 ```
 
-Kode program:
+**Kode program:**
 
 ```python
 import network
@@ -603,129 +615,139 @@ while True:
 
 ---
 
-## 15. Cara Menjalankan Program
+## 🚀 15. Cara Menjalankan Program
 
-Langkah umum menjalankan program:
+**Langkah umum menjalankan program:**
 
 ```text
-1. Install Thonny IDE di laptop.
-2. Flash firmware MicroPython ke ESP32.
-3. Hubungkan ESP32 ke laptop menggunakan kabel USB.
-4. Buka Thonny IDE.
-5. Pilih interpreter MicroPython ESP32.
-6. Buat file main.py.
-7. Masukkan kode program ke main.py.
-8. Ganti NAMA_WIFI dan PASSWORD_WIFI.
-9. Upload file main.py ke ESP32.
-10. Jalankan ESP32.
-11. Lihat IP ESP32 pada serial monitor.
-12. Buka IP tersebut di browser HP atau laptop.
-13. Tekan tombol semprot.
+1️⃣  Install Thonny IDE di laptop.
+2️⃣  Flash firmware MicroPython ke ESP32.
+3️⃣  Hubungkan ESP32 ke laptop menggunakan kabel USB.
+4️⃣  Buka Thonny IDE.
+5️⃣  Pilih interpreter MicroPython ESP32.
+6️⃣  Buat file main.py.
+7️⃣  Masukkan kode program ke main.py.
+8️⃣  Ganti NAMA_WIFI dan PASSWORD_WIFI.
+9️⃣  Upload file main.py ke ESP32.
+🔟 Jalankan ESP32.
+1️⃣1️⃣ Lihat IP ESP32 pada serial monitor.
+1️⃣2️⃣ Buka IP tersebut di browser HP atau laptop.
+1️⃣3️⃣ Tekan tombol semprot.
 ```
 
 ---
 
-## 16. Contoh Penggunaan
+## 📱 16. Contoh Penggunaan
 
-Contoh penggunaan alat:
+**Contoh penggunaan alat:**
 
 ```text
-1. Isi botol dengan campuran air dan pewangi cair.
-2. Sambungkan selang dari botol ke pompa.
-3. Sambungkan selang dari pompa ke nozzle.
-4. Hubungkan ESP32 ke adaptor USB 5V 2A.
-5. Tunggu ESP32 terhubung ke WiFi.
-6. Buka alamat IP ESP32 di browser.
-7. Tekan tombol "Semprot 2 Detik".
-8. Pompa menyala dan pewangi keluar dari nozzle.
-9. Pompa mati otomatis setelah 2 detik.
+1️⃣  Isi botol dengan campuran air dan pewangi cair.
+2️⃣  Sambungkan selang dari botol ke pompa.
+3️⃣  Sambungkan selang dari pompa ke nozzle.
+4️⃣  Hubungkan ESP32 ke adaptor USB 5V 2A.
+5️⃣  Tunggu ESP32 terhubung ke WiFi.
+6️⃣  Buka alamat IP ESP32 di browser.
+7️⃣  Tekan tombol "Semprot 2 Detik".
+8️⃣  Pompa menyala dan pewangi keluar dari nozzle.
+9️⃣  Pompa mati otomatis setelah 2 detik.
 ```
 
 ---
 
-## 17. Campuran Cairan Pewangi
+## 🧪 17. Campuran Cairan Pewangi
 
 Untuk prototype awal, campuran cairan jangan terlalu kental.
 
-Contoh campuran:
+**Contoh campuran:**
 
 ```text
-Air bersih 90%
-Pewangi cair 10%
+💧 Air bersih 90%
+🌸 Pewangi cair 10%
 ```
 
-Atau:
+**Atau:**
 
 ```text
-Air bersih 95%
-Essential oil / bibit parfum 5%
+💧 Air bersih 95%
+🌿 Essential oil / bibit parfum 5%
 ```
 
-Catatan:
+**Catatan:**
 
 ```text
-- Jangan terlalu banyak pewangi.
-- Jangan gunakan cairan terlalu kental.
-- Bersihkan selang dan nozzle secara berkala.
-- Jika nozzle mampet, kurangi kekentalan cairan.
-```
-
----
-
-## 18. Batasan Prototype
-
-Batasan pada prototype awal:
-
-```text
-1. Belum menggunakan sensor level cairan.
-2. Belum menggunakan casing permanen.
-3. Belum menggunakan baterai rechargeable.
-4. Kontrol masih melalui halaman web sederhana.
-5. Belum menggunakan perintah suara langsung.
-6. Belum ada database untuk menyimpan riwayat semprot.
+⚠️  Jangan terlalu banyak pewangi.
+⚠️  Jangan gunakan cairan terlalu kental.
+🧹 Bersihkan selang dan nozzle secara berkala.
+🔧 Jika nozzle mampet, kurangi kekentalan cairan.
 ```
 
 ---
 
-## 19. Rencana Pengembangan
+## ⚠️ 18. Batasan Prototype
 
-Project ini dapat dikembangkan dengan fitur:
-
-```text
-1. Jadwal semprot otomatis.
-2. Sensor cairan hampir habis.
-3. Kontrol melalui aplikasi mobile.
-4. Perintah suara menggunakan HP.
-5. Integrasi AI untuk perintah natural language.
-6. Mode hemat cairan.
-7. Riwayat penggunaan.
-8. Notifikasi ke HP.
-9. Casing custom menggunakan akrilik atau 3D print.
-10. Power supply menggunakan baterai rechargeable atau powerbank.
-```
-
-Contoh pengembangan AI:
+**Batasan pada prototype awal:**
 
 ```text
-User berkata: "Bikin kamar lebih wangi"
-        ↓
-Perintah diproses di HP / server
-        ↓
-HP / server mengirim perintah ke ESP32
-        ↓
-ESP32 menyalakan pompa
-        ↓
-Alat menyemprotkan pewangi
+❌ Belum menggunakan sensor level cairan.
+❌ Belum menggunakan casing permanen.
+❌ Belum menggunakan baterai rechargeable.
+❌ Kontrol masih melalui halaman web sederhana.
+❌ Belum menggunakan perintah suara langsung.
+❌ Belum ada database untuk menyimpan riwayat semprot.
 ```
-
-Pada konsep ini, AI tidak dijalankan langsung di ESP32 karena ESP32 memiliki keterbatasan memori dan performa. ESP32 lebih cocok menjadi alat eksekusi, sedangkan AI atau perintah suara dapat diproses melalui HP, laptop, atau server.
 
 ---
 
-## 20. Kesimpulan
+## 🎯 19. Rencana Pengembangan
 
-Smart Room Fragrance Spray Berbasis IoT untuk Anak Kost adalah alat penyemprot pewangi ruangan otomatis yang menggunakan ESP32, pompa mini 5V, relay, dan nozzle spray. Alat ini dibuat untuk memberikan solusi pewangi ruangan yang lebih fleksibel, murah, dan mudah digunakan.
+**Project ini dapat dikembangkan dengan fitur:**
 
-Project ini cocok untuk anak kost karena menggunakan cairan isi ulang, tidak memakai aerosol atau gas, serta dapat dikontrol melalui HP atau laptop. Dengan sumber daya USB 5V, alat ini juga lebih aman untuk prototype awal.
+```text
+📅 Jadwal semprot otomatis.
+💧 Sensor cairan hampir habis.
+📱 Kontrol melalui aplikasi mobile.
+🎤 Perintah suara menggunakan HP.
+🤖 Integrasi AI untuk perintah natural language.
+⚡ Mode hemat cairan.
+📊 Riwayat penggunaan.
+🔔 Notifikasi ke HP.
+🎨 Casing custom menggunakan akrilik atau 3D print.
+🔋 Power supply menggunakan baterai rechargeable atau powerbank.
+```
+
+**Contoh pengembangan AI:**
+
+```text
+🗣️  User berkata: "Bikin kamar lebih wangi"
+        ↓
+⚙️  Perintah diproses di HP / server
+        ↓
+📤 HP / server mengirim perintah ke ESP32
+        ↓
+💨 ESP32 menyalakan pompa
+        ↓
+✨ Alat menyemprotkan pewangi
+```
+
+Pada konsep ini, AI tidak dijalankan langsung di ESP32 karena ESP32 memiliki keterbatasan memori dan performa. ESP32 lebih cocok menjadi alat eksekusi, sedangkan AI atau perintah suara dapat diproses di HP, server cloud, atau edge AI device terpisah.
+
+---
+
+## ✅ 20. Kesimpulan
+
+**Smart Room Fragrance Spray Berbasis IoT untuk Anak Kost** adalah alat penyemprot pewangi ruangan otomatis yang menggunakan ESP32, pompa mini 5V, relay, dan nozzle spray. Alat ini dibuat untuk membantu anak kost memiliki ruangan yang nyaman dan wangi.
+
+Project ini cocok untuk anak kost karena menggunakan cairan isi ulang, tidak memakai aerosol atau gas, serta dapat dikontrol melalui HP atau laptop. Dengan sumber daya USB 5V, alat ini juga lebih aman dan mudah digunakan.
 
 Secara keseluruhan, project ini memiliki potensi untuk dikembangkan menjadi alat IoT yang lebih lengkap dengan fitur jadwal otomatis, sensor cairan, perintah suara, dan integrasi AI.
+
+---
+
+<div align="center">
+
+### Made with ❤️ for Anak Kost
+
+⭐ **Jika project ini bermanfaat, silakan berikan star!** ⭐
+
+</div>
